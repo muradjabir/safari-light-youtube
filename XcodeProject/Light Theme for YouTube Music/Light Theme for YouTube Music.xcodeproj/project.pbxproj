@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE60E9A305BDC330019BD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE60E99305BDC330019BD54 /* AppDelegate.swift */; };
+		CAE60E9E305BDC330019BD54 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE60E9C305BDC330019BD54 /* Main.html */; };
+		CAE60EA0305BDC330019BD54 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE60E9F305BDC330019BD54 /* Icon.png */; };
+		CAE60EA2305BDC330019BD54 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EA1305BDC330019BD54 /* Style.css */; };
+		CAE60EA4305BDC330019BD54 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EA3305BDC330019BD54 /* Script.js */; };
+		CAE60EA6305BDC330019BD54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE60EA5305BDC330019BD54 /* ViewController.swift */; };
+		CAE60EA9305BDC330019BD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EA7305BDC330019BD54 /* Main.storyboard */; };
+		CAE60EAB305BDC330019BD54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EAA305BDC330019BD54 /* Assets.xcassets */; };
+		CAE60EB2305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CAE60EB1305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAE60EB7305BDC330019BD54 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE60EB6305BDC330019BD54 /* SafariWebExtensionHandler.swift */; };
+		CAE60EC6305BDC340019BD54 /* light-ytm.css in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EC3305BDC340019BD54 /* light-ytm.css */; };
+		CAE60EC7305BDC340019BD54 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EC4305BDC340019BD54 /* icons */; };
+		CAE60EC8305BDC340019BD54 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CAE60EC5305BDC340019BD54 /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE60EB3305BDC330019BD54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE60E8E305BDC330019BD54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE60EB0305BDC330019BD54;
+			remoteInfo = "Light Theme for YouTube Music Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAE60EBE305BDC330019BD54 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				CAE60EB2305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CAE60E96305BDC330019BD54 /* Light Theme for YouTube Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Theme for YouTube Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE60E99305BDC330019BD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE60E9D305BDC330019BD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		CAE60E9F305BDC330019BD54 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CAE60EA1305BDC330019BD54 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		CAE60EA3305BDC330019BD54 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		CAE60EA5305BDC330019BD54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE60EA8305BDC330019BD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE60EAA305BDC330019BD54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE60EAC305BDC330019BD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE60EB1305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Light Theme for YouTube Music Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE60EB6305BDC330019BD54 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		CAE60EB8305BDC330019BD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE60EC3305BDC340019BD54 /* light-ytm.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "light-ytm.css"; path = "../../../Extension/light-ytm.css"; sourceTree = "<group>"; };
+		CAE60EC4305BDC340019BD54 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../Extension/icons; sourceTree = "<group>"; };
+		CAE60EC5305BDC340019BD54 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../Extension/manifest.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE60E93305BDC330019BD54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		CAE60EAE305BDC330019BD54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE60E8D305BDC320019BD54 = {
+			isa = PBXGroup;
+			children = (
+				CAE60E98305BDC330019BD54 /* Light Theme for YouTube Music */,
+				CAE60EB5305BDC330019BD54 /* Light Theme for YouTube Music Extension */,
+				CAE60E97305BDC330019BD54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE60E97305BDC330019BD54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE60E96305BDC330019BD54 /* Light Theme for YouTube Music.app */,
+				CAE60EB1305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE60E98305BDC330019BD54 /* Light Theme for YouTube Music */ = {
+			isa = PBXGroup;
+			children = (
+				CAE60E99305BDC330019BD54 /* AppDelegate.swift */,
+				CAE60EA5305BDC330019BD54 /* ViewController.swift */,
+				CAE60EA7305BDC330019BD54 /* Main.storyboard */,
+				CAE60EAA305BDC330019BD54 /* Assets.xcassets */,
+				CAE60EAC305BDC330019BD54 /* Info.plist */,
+				CAE60E9B305BDC330019BD54 /* Resources */,
+			);
+			path = "Light Theme for YouTube Music";
+			sourceTree = "<group>";
+		};
+		CAE60E9B305BDC330019BD54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAE60E9C305BDC330019BD54 /* Main.html */,
+				CAE60E9F305BDC330019BD54 /* Icon.png */,
+				CAE60EA1305BDC330019BD54 /* Style.css */,
+				CAE60EA3305BDC330019BD54 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAE60EB5305BDC330019BD54 /* Light Theme for YouTube Music Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CAE60EC2305BDC340019BD54 /* Resources */,
+				CAE60EB6305BDC330019BD54 /* SafariWebExtensionHandler.swift */,
+				CAE60EB8305BDC330019BD54 /* Info.plist */,
+			);
+			path = "Light Theme for YouTube Music Extension";
+			sourceTree = "<group>";
+		};
+		CAE60EC2305BDC340019BD54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAE60EC3305BDC340019BD54 /* light-ytm.css */,
+				CAE60EC4305BDC340019BD54 /* icons */,
+				CAE60EC5305BDC340019BD54 /* manifest.json */,
+			);
+			name = Resources;
+			path = "Light Theme for YouTube Music Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE60E95305BDC330019BD54 /* Light Theme for YouTube Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE60EBF305BDC330019BD54 /* Build configuration list for PBXNativeTarget "Light Theme for YouTube Music" */;
+			buildPhases = (
+				CAE60E92305BDC330019BD54 /* Sources */,
+				CAE60E93305BDC330019BD54 /* Frameworks */,
+				CAE60E94305BDC330019BD54 /* Resources */,
+				CAE60EBE305BDC330019BD54 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE60EB4305BDC330019BD54 /* PBXTargetDependency */,
+			);
+			name = "Light Theme for YouTube Music";
+			productName = "Light Theme for YouTube Music";
+			productReference = CAE60E96305BDC330019BD54 /* Light Theme for YouTube Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE60EB0305BDC330019BD54 /* Light Theme for YouTube Music Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE60EBB305BDC330019BD54 /* Build configuration list for PBXNativeTarget "Light Theme for YouTube Music Extension" */;
+			buildPhases = (
+				CAE60EAD305BDC330019BD54 /* Sources */,
+				CAE60EAE305BDC330019BD54 /* Frameworks */,
+				CAE60EAF305BDC330019BD54 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Light Theme for YouTube Music Extension";
+			productName = "Light Theme for YouTube Music Extension";
+			productReference = CAE60EB1305BDC330019BD54 /* Light Theme for YouTube Music Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE60E8E305BDC330019BD54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					CAE60E95305BDC330019BD54 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					CAE60EB0305BDC330019BD54 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = CAE60E91305BDC330019BD54 /* Build configuration list for PBXProject "Light Theme for YouTube Music" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE60E8D305BDC320019BD54;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CAE60E97305BDC330019BD54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE60E95305BDC330019BD54 /* Light Theme for YouTube Music */,
+				CAE60EB0305BDC330019BD54 /* Light Theme for YouTube Music Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE60E94305BDC330019BD54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				CAE60EA0305BDC330019BD54 /* Icon.png in Resources */,
+				CAE60EA9305BDC330019BD54 /* Main.storyboard in Resources */,
+				CAE60EA4305BDC330019BD54 /* Script.js in Resources */,
+				CAE60E9E305BDC330019BD54 /* Main.html in Resources */,
+				CAE60EAB305BDC330019BD54 /* Assets.xcassets in Resources */,
+				CAE60EA2305BDC330019BD54 /* Style.css in Resources */,
+			);
+		};
+		CAE60EAF305BDC330019BD54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				CAE60EC6305BDC340019BD54 /* light-ytm.css in Resources */,
+				CAE60EC8305BDC340019BD54 /* manifest.json in Resources */,
+				CAE60EC7305BDC340019BD54 /* icons in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE60E92305BDC330019BD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				CAE60EA6305BDC330019BD54 /* ViewController.swift in Sources */,
+				CAE60E9A305BDC330019BD54 /* AppDelegate.swift in Sources */,
+			);
+		};
+		CAE60EAD305BDC330019BD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				CAE60EB7305BDC330019BD54 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE60EB4305BDC330019BD54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE60EB0305BDC330019BD54 /* Light Theme for YouTube Music Extension */;
+			targetProxy = CAE60EB3305BDC330019BD54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE60E9C305BDC330019BD54 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE60E9D305BDC330019BD54 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		CAE60EA7305BDC330019BD54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE60EA8305BDC330019BD54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE60EB9305BDC330019BD54 /* Debug configuration for PBXProject "Light Theme for YouTube Music" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE60EBA305BDC330019BD54 /* Release configuration for PBXProject "Light Theme for YouTube Music" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CAE60EBC305BDC330019BD54 /* Debug configuration for PBXNativeTarget "Light Theme for YouTube Music Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Light Theme for YouTube Music Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Theme for YouTube Music Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Light-Theme-for-YouTube-Music.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CAE60EBD305BDC330019BD54 /* Release configuration for PBXNativeTarget "Light Theme for YouTube Music Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Light Theme for YouTube Music Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Theme for YouTube Music Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Light-Theme-for-YouTube-Music.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CAE60EC0305BDC330019BD54 /* Debug configuration for PBXNativeTarget "Light Theme for YouTube Music" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Light Theme for YouTube Music/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Theme for YouTube Music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Light-Theme-for-YouTube-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CAE60EC1305BDC330019BD54 /* Release configuration for PBXNativeTarget "Light Theme for YouTube Music" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Light Theme for YouTube Music/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Theme for YouTube Music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Light-Theme-for-YouTube-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE60E91305BDC330019BD54 /* Build configuration list for PBXProject "Light Theme for YouTube Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE60EB9305BDC330019BD54 /* Debug configuration for PBXProject "Light Theme for YouTube Music" */,
+				CAE60EBA305BDC330019BD54 /* Release configuration for PBXProject "Light Theme for YouTube Music" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CAE60EBB305BDC330019BD54 /* Build configuration list for PBXNativeTarget "Light Theme for YouTube Music Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE60EBC305BDC330019BD54 /* Debug configuration for PBXNativeTarget "Light Theme for YouTube Music Extension" */,
+				CAE60EBD305BDC330019BD54 /* Release configuration for PBXNativeTarget "Light Theme for YouTube Music Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CAE60EBF305BDC330019BD54 /* Build configuration list for PBXNativeTarget "Light Theme for YouTube Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE60EC0305BDC330019BD54 /* Debug configuration for PBXNativeTarget "Light Theme for YouTube Music" */,
+				CAE60EC1305BDC330019BD54 /* Release configuration for PBXNativeTarget "Light Theme for YouTube Music" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE60E8E305BDC330019BD54 /* Project object */;
+	validationLevel = 1;
+}
