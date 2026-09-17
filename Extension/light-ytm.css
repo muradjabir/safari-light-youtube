@@ -2382,3 +2382,32 @@ ytmusic-search-box, ytmusic-search-box[has-query] {
 ytmusic-search-box input, ytmusic-search-box tp-yt-iron-icon {
     color: var(--ytm-text) !important;
 }
+
+/* Popup Menus & Dialogs */
+ytmusic-menu-popup-renderer, 
+tp-yt-paper-listbox,
+tp-yt-paper-dialog,
+ytmusic-dialog {
+    background: var(--ytm-bg-content) !important;
+    border: 1px solid var(--ytm-seperator) !important;
+}
+ytmusic-menu-popup-renderer tp-yt-paper-item,
+ytmusic-menu-popup-renderer yt-formatted-string,
+ytmusic-menu-popup-renderer tp-yt-iron-icon,
+ytmusic-menu-navigation-item-renderer,
+ytmusic-menu-service-item-renderer {
+    color: var(--ytm-text) !important;
+}
+ytmusic-menu-navigation-item-renderer:hover,
+ytmusic-menu-service-item-renderer:hover {
+    background-color: var(--ytm-hover) !important;
+}
+
+/* Album Art Background Bleed Fix */
+yt-img-shadow, 
+yt-img-shadow img, 
+.image.ytmusic-two-row-item-renderer, 
+.thumbnail.ytmusic-play-button-renderer {
+    background: transparent !important;
+    background-color: transparent !important;
+}
