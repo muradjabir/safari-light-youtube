@@ -1,5 +1,7 @@
 # Light Theme for YouTube Music - Safari Extension
 
+![Promo](https://raw.githubusercontent.com/Tech-How/Light-Theme-for-YouTube-Music/main/images/promo.png)
+
 A Safari Web Extension port of the beautiful [Light Theme for YouTube Music](https://github.com/Tech-How/Light-Theme-for-YouTube-Music) originally created by Tristian Dedinas.
 
 This extension injects custom CSS into `music.youtube.com` to completely transform the default dark aesthetic into a clean, modern light theme. 
