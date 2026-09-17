@@ -2425,3 +2425,17 @@ ytmusic-av-toggle[playback-mode="OMV_PREFERRED"] .video-button.ytmusic-av-toggle
 .video-button.ytmusic-av-toggle {
     color: var(--ytm-placeholder) !important;
 }
+
+/* Player Bar Like/Unlike and Menu Buttons */
+ytmusic-player-bar ytmusic-like-button-renderer tp-yt-iron-icon,
+ytmusic-player-bar ytmusic-like-button-renderer yt-icon,
+ytmusic-player-bar ytmusic-menu-renderer tp-yt-iron-icon,
+ytmusic-player-bar ytmusic-menu-renderer yt-icon,
+ytmusic-player-bar yt-button-shape tp-yt-iron-icon,
+ytmusic-player-bar yt-button-shape yt-icon {
+    color: var(--ytm-text) !important;
+}
+ytmusic-player-bar ytmusic-like-button-renderer tp-yt-paper-icon-button,
+ytmusic-player-bar ytmusic-menu-renderer tp-yt-paper-icon-button {
+    color: var(--ytm-text) !important;
+}
