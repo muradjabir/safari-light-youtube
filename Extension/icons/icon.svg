@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle (White for Light Theme) -->
+  <circle cx="64" cy="64" r="60" fill="#ffffff" stroke="#111111" stroke-width="8" />
+  
+  <!-- Outer ring accent -->
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#e0e0e0" stroke-width="4" />
+
+  <!-- Inner core (Black) -->
+  <circle cx="64" cy="64" r="28" fill="#111111" />
+  
+  <!-- Play button (White) -->
+  <polygon points="54,48 54,80 82,64" fill="#ffffff" />
+</svg>
