@@ -2411,3 +2411,17 @@ yt-img-shadow img,
     background: transparent !important;
     background-color: transparent !important;
 }
+
+/* Song/Video AV Toggle */
+.av-toggle.ytmusic-av-toggle {
+    background: var(--ytm-selected) !important;
+}
+ytmusic-av-toggle[playback-mode="ATV_PREFERRED"] .song-button.ytmusic-av-toggle, 
+ytmusic-av-toggle[playback-mode="OMV_PREFERRED"] .video-button.ytmusic-av-toggle {
+    background: var(--ytm-bg-content) !important;
+    color: var(--ytm-text) !important;
+}
+.song-button.ytmusic-av-toggle, 
+.video-button.ytmusic-av-toggle {
+    color: var(--ytm-placeholder) !important;
+}
