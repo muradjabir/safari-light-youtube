@@ -2325,3 +2325,60 @@ ytmusic-player-page[is-mweb-modernization-enabled]:not([player-ui-state="PLAYER_
 ytmusic-player-page[is-mweb-modernization-enabled][player-ui-state="PLAYER_BAR_ONLY"] ytmusic-player#player.style-scope.ytmusic-player-page div#song-image.style-scope.ytmusic-player yt-img-shadow#thumbnail.thumbnail.style-scope.ytmusic-player.no-transition img#img.style-scope.yt-img-shadow {
     border-radius: var(--ytm-radius-mini) !important;
 }
+
+/* --- Added Custom Overrides for Sidebar and Bottom Player --- */
+
+/* Bottom Player Bar */
+ytmusic-player-bar {
+    background: var(--ytm-bg-content) !important;
+    border-top: 1px solid var(--ytm-seperator) !important;
+}
+ytmusic-player-bar .title, 
+ytmusic-player-bar .byline, 
+ytmusic-player-bar .time-info, 
+ytmusic-player-bar yt-formatted-string,
+ytmusic-player-bar paper-icon-button, 
+ytmusic-player-bar tp-yt-iron-icon {
+    color: var(--ytm-text) !important;
+}
+#player-bar-background.ytmusic-app-layout {
+    background: var(--ytm-bg-content) !important;
+}
+
+/* Left Sidebar Navigation */
+#guide-wrapper.ytmusic-app-layout, 
+tp-yt-app-drawer, 
+ytmusic-guide-renderer,
+#mini-guide-background {
+    background: var(--ytm-bg-app) !important;
+}
+ytmusic-guide-renderer .title,
+ytmusic-guide-renderer yt-formatted-string,
+ytmusic-guide-renderer tp-yt-iron-icon {
+    color: var(--ytm-text) !important;
+}
+ytmusic-guide-entry-renderer[active] {
+    background-color: var(--ytm-selected) !important;
+}
+ytmusic-guide-entry-renderer:hover {
+    background-color: var(--ytm-hover) !important;
+}
+
+/* Top Navigation Bar */
+ytmusic-nav-bar {
+    background: var(--ytm-bg-content) !important;
+    border-bottom: 1px solid var(--ytm-seperator) !important;
+}
+ytmusic-nav-bar tp-yt-iron-icon, 
+ytmusic-nav-bar yt-icon, 
+ytmusic-nav-bar .title,
+ytmusic-nav-bar yt-formatted-string {
+    color: var(--ytm-text) !important;
+}
+ytmusic-search-box, ytmusic-search-box[has-query] {
+    background: var(--ytm-bg-app) !important;
+    border: 1px solid var(--ytm-seperator) !important;
+}
+ytmusic-search-box input, ytmusic-search-box tp-yt-iron-icon {
+    color: var(--ytm-text) !important;
+}
