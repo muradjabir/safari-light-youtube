@@ -1,0 +1,35 @@
+{% extends 'layout.html' if not request.headers.get('X-Requested-With') == 'XMLHttpRequest' else 'base_ajax.html' %}
+{% block content %}
+<h2 class="section-title">{{ playlist.title }}</h2>
+<p style="color: #aaa;">{{ playlist.trackCount }} songs</p>
+
+{% if playlist.tracks %}
+<ul class="song-list">
+    {% for track in playlist.tracks %}
+        {% if track.videoId %}
+        <li class="song-item">
+            <a href="/play/{{ track.videoId }}" class="song-link" data-video-id="{{ track.videoId }}" data-title="{{ track.title }}" data-thumb="{% if track.thumbnails and track.thumbnails|length > 0 %}{{ proxy_image(track.thumbnails[0].url) }}{% endif %}">
+                {% if track.thumbnails and track.thumbnails|length > 0 %}
+                    <img src="{{ proxy_image(track.thumbnails[0].url) }}" class="song-thumb" alt="Thumb">
+                {% else %}
+                    <div class="song-thumb"></div>
+                {% endif %}
+                <div class="song-info">
+                    <div class="song-title">{{ track.title }}</div>
+                    <div class="song-artist">
+                        {% if track.artists %}
+                            {% for artist in track.artists %}
+                                {{ artist.name }}{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% else %}
+<p>No tracks in this playlist.</p>
+{% endif %}
+{% endblock %}

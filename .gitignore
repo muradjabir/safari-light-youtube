@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+audio_cache/
+image_cache/
+metadata_cache/
+headers_auth.json
+browser.json
+.DS_Store
+*.pyc
+*.pyo
+.vscode/
+*.swp
+*.b64
+*.mp3
+*.log

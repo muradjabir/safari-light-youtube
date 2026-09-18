@@ -1,0 +1,13 @@
+{% extends 'layout.html' if not request.headers.get('X-Requested-With') == 'XMLHttpRequest' else 'base_ajax.html' %}
+{% block content %}
+<div style="max-width: 400px; margin: 0 auto; padding-top: 40px;">
+    <h2 class="section-title">Log in to YouTube Music</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">
+        To access your library, paste your raw request headers below. You can get these by inspecting a network request on music.youtube.com from your desktop browser.
+    </p>
+    <form action="/login" method="POST">
+        <textarea name="headers" rows="10" placeholder="Paste raw headers here..." style="width: 100%; background: #121212; color: #fff; border: 1px solid #333; padding: 10px; border-radius: 8px; margin-bottom: 20px; font-family: monospace;" required></textarea>
+        <button type="submit" style="width: 100%; padding: 12px; background: #fff; color: #000; border: none; border-radius: 20px; font-weight: bold; font-size: 16px;">Connect Account</button>
+    </form>
+</div>
+{% endblock %}

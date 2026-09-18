@@ -1,0 +1,36 @@
+{% extends 'layout.html' if not request.headers.get('X-Requested-With') == 'XMLHttpRequest' else 'base_ajax.html' %}
+{% block content %}
+<h2 class="section-title">Settings</h2>
+
+<div style="padding: 15px; color: #fff;">
+    <h3 style="margin-top: 0;">Cache Usage</h3>
+    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><strong>Audio Cache:</strong> {{ audio_size }}</li>
+        <li><strong>Image Cache:</strong> {{ image_size }}</li>
+        <li><strong>Metadata Cache:</strong> {{ metadata_size }}</li>
+        <li style="border-top: 1px solid #333; margin-top: 5px; padding-top: 5px;"><strong>Total:</strong> {{ total_size }}</li>
+    </ul>
+
+    <h3 style="margin-top: 20px;">Clear Caches</h3>
+    
+    <form action="/settings/clear" method="POST" style="margin-bottom: 10px;">
+        <input type="hidden" name="type" value="audio">
+        <button type="submit" style="width: 100%; padding: 10px; background: #333; color: white; border: none; border-radius: 4px; font-size: 16px;">Clear Audio Cache</button>
+    </form>
+    
+    <form action="/settings/clear" method="POST" style="margin-bottom: 10px;">
+        <input type="hidden" name="type" value="image">
+        <button type="submit" style="width: 100%; padding: 10px; background: #333; color: white; border: none; border-radius: 4px; font-size: 16px;">Clear Image Cache</button>
+    </form>
+    
+    <form action="/settings/clear" method="POST" style="margin-bottom: 10px;">
+        <input type="hidden" name="type" value="metadata">
+        <button type="submit" style="width: 100%; padding: 10px; background: #333; color: white; border: none; border-radius: 4px; font-size: 16px;">Clear Metadata Cache</button>
+    </form>
+    
+    <form action="/settings/clear" method="POST" style="margin-top: 20px;">
+        <input type="hidden" name="type" value="all">
+        <button type="submit" style="width: 100%; padding: 12px; background: #d32f2f; color: white; border: none; border-radius: 4px; font-size: 16px; font-weight: bold;">Clear All Caches</button>
+    </form>
+</div>
+{% endblock %}

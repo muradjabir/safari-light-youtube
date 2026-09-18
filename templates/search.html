@@ -1,0 +1,33 @@
+{% extends 'layout.html' if not request.headers.get('X-Requested-With') == 'XMLHttpRequest' else 'base_ajax.html' %}
+{% block content %}
+<h2 class="section-title">Top results for "{{ query }}"</h2>
+{% if results %}
+<ul class="song-list">
+    {% for song in results %}
+        {% if song.videoId %}
+        <li class="song-item">
+            <a href="/play/{{ song.videoId }}" class="song-link" data-video-id="{{ song.videoId }}" data-title="{{ song.title }}" data-thumb="{% if song.thumbnails and song.thumbnails|length > 0 %}{{ proxy_image(song.thumbnails[0].url) }}{% endif %}">
+                {% if song.thumbnails and song.thumbnails|length > 0 %}
+                    <img src="{{ proxy_image(song.thumbnails[0].url) }}" class="song-thumb" alt="Thumb">
+                {% else %}
+                    <div class="song-thumb"></div>
+                {% endif %}
+                <div class="song-info">
+                    <div class="song-title">{{ song.title }}</div>
+                    <div class="song-artist">
+                        {% if song.artists %}
+                            {% for artist in song.artists %}
+                                {{ artist.name }}{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% else %}
+<p>No results found.</p>
+{% endif %}
+{% endblock %}
