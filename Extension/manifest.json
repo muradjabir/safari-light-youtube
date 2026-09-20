@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Light Theme for YouTube Music",
-  "version": "1.0",
+  "version": "0.1.1",
   "description": "A light theme port for YouTube Music.",
   "icons": {
     "48": "icons/icon_48.png",
